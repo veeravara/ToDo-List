@@ -11,6 +11,7 @@ h1{
   color: rgb(17, 16, 16);
 }
 body {
+  width: 400px auto;
   background-image: url("./pexels-ivan-samkov-7213436.jpg");
   height: vh; 
   background-position: center;
