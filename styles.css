@@ -4,14 +4,14 @@
   box-sizing: border-box;
 }
 h1{
-  
   padding: 0.5rem;
   border-radius: 15px;
+  
   background-color: #e3e7db;
   color: rgb(17, 16, 16);
 }
 body {
-  background-image: url("./todo.jpg");
+  background: url(./todo.jpg);
   width: 300px auto;
   height: vh; 
   background-position: center;
@@ -21,6 +21,7 @@ body {
   font-family: 'Alkatra', cursive;
   min-height: 100vh;
   font-weight: bolder;
+  
 }
 header {
   font-size: 2rem;
@@ -48,12 +49,7 @@ form button {
 }
 form button:hover {
   background: #ff6f47;
-  color: rgb(173, 21, 21);
-}
-.todo-input{
-  border-radius: 5px;
-  background:#F0F0F0;
-  opacity: 0.85;
+  color: white;
 }
 .todo-container {
   display: flex;
@@ -65,14 +61,10 @@ form button:hover {
   min-width: 30%;
   list-style: none;
 }
-.todo-button{
-  background: #F0F0F0;
-  border-radius: 3px;
-  margin: 1px;
-}
+
 .todo {
   margin: 0.5rem;
- 
+  background: white;
   font-size: 1.5rem;
   color: black;
   display: flex;
@@ -81,19 +73,22 @@ form button:hover {
   transition: all 1s ease;
 }
 .filter-todo {
-  background: #F0F0F0;
-  border-radius: 5px;
   padding: 1rem;
   font-size: large;
+  background: #F0F0F0;
 }
 .todo li {
   flex: 1;
+}
+.todo-input{
+  background: #F0F0F0;
+  border-radius: 5px;
 }
 
 .trash-btn,
 .complete-btn {
   background: #ff6f47;
-  color: white;
+  color: #F0F0F0;
   border: none;
   padding: 1rem;
   cursor: pointer;
@@ -105,6 +100,12 @@ form button:hover {
 .todo-item {
   padding: 0rem 0.5rem;
 }
+.todo-button{
+  background: #F0F0F0;
+  border-radius: 5px;
+  margin: 2px;
+}
+
 
 .fa-trash,
 .fa-check {
@@ -121,7 +122,7 @@ form button:hover {
   opacity: 0.5;
 }
 
-
+/*CUSTOM SELECTOR */
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -133,7 +134,7 @@ select {
   background-image: none;
 }
 
-
+/* Custom Select */
 .select {
   margin: 1rem;
   position: relative;
@@ -145,7 +146,7 @@ select {
   cursor: pointer;
   width: 12rem;
 }
-
+/* Arrow */
 .select::after {
   content: "\25BC";
   position: absolute;
@@ -156,8 +157,8 @@ select {
   cursor: pointer;
   pointer-events: none;
 }
+/* Transition */
 
 .select:hover::after {
   transform: scale(1.5);
 }
-
