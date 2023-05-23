@@ -4,15 +4,15 @@
   box-sizing: border-box;
 }
 h1{
+  
   padding: 0.5rem;
   border-radius: 15px;
-  
   background-color: #e3e7db;
   color: rgb(17, 16, 16);
 }
 body {
+  background-image: url("./todo.jpg");
   width: 300px auto;
-  background-image: url("./pexels-ivan-samkov-7213436.jpg");
   height: vh; 
   background-position: center;
   background-repeat: no-repeat;
@@ -24,7 +24,6 @@ body {
 }
 header {
   font-size: 2rem;
-  
 }
 
 header,
@@ -43,13 +42,18 @@ form button {
 }
 form button {
   color: #ff6f47;
-  background: #c2a69e;
+  background: #f7fffe;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form button:hover {
   background: #ff6f47;
-  color: white;
+  color: rgb(173, 21, 21);
+}
+.todo-input{
+  border-radius: 5px;
+  background:#F0F0F0;
+  opacity: 0.85;
 }
 .todo-container {
   display: flex;
@@ -61,10 +65,14 @@ form button:hover {
   min-width: 30%;
   list-style: none;
 }
-
+.todo-button{
+  background: #F0F0F0;
+  border-radius: 3px;
+  margin: 1px;
+}
 .todo {
   margin: 0.5rem;
-  background:#e4856b;
+ 
   font-size: 1.5rem;
   color: black;
   display: flex;
@@ -73,7 +81,10 @@ form button:hover {
   transition: all 1s ease;
 }
 .filter-todo {
+  background: #F0F0F0;
+  border-radius: 5px;
   padding: 1rem;
+  font-size: large;
 }
 .todo li {
   flex: 1;
@@ -89,7 +100,7 @@ form button:hover {
   font-size: 1rem;
 }
 .complete-btn {
-  background: rgb(10, 207, 125);
+  background: rgb(11, 212, 162);
 }
 .todo-item {
   padding: 0rem 0.5rem;
@@ -122,6 +133,7 @@ select {
   background-image: none;
 }
 
+
 .select {
   margin: 1rem;
   position: relative;
@@ -144,3 +156,8 @@ select {
   cursor: pointer;
   pointer-events: none;
 }
+
+.select:hover::after {
+  transform: scale(1.5);
+}
+
